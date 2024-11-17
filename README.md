@@ -5,12 +5,12 @@ Para rodar o projeto no ubuntu 22.04, será necessário das seguintes tecnologia
 - Docker
 - Docker Compose
 - Java => Openjdk-8-jdk
-
-# Configuração do ambiente
-- Suba os containers da aplicação com o comando
+- Suba os containers da aplicação com o comando, todas as configurações já foram feitas para rodar perfeitamente. Informei as configurações de ambiente do que eu fiz
 ```bash
 docker-compose up -d
 ```
+
+# Configuração do ambiente
 
 - Entre no diretório app e faça o build da aplicação feita em java
 ```bash
