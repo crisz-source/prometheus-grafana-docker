@@ -1,0 +1,17 @@
+global:
+  scrape_interval: 5s # scrape siginifica a demora que o prometheus a consular a determindado endpoint de métrica, neste caso 5s
+
+scrape_configs: # configurações de consulta das métricas
+  - job_name: prometheus-forum-api # container que vai ser monitorado
+    scrape_interval: 15s
+    scrape_timeout: 10s
+    metrics_path: /metrics
+    scheme: http
+    static_configs:
+    - targets:
+      - prometheus-forum-api:9090
+  - job_name: app-forum-api # container que vai ser monitorado
+    metrics_path: /actuator/prometheus # endpoint que vai ser monitorado, neste caso, esse endpoint foi gerado pelo actuator
+    static_configs:
+    - targets:
+      - app-forum-api:8080 # porta que esta rodando
