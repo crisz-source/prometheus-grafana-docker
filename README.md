@@ -6,6 +6,7 @@ Para rodar o projeto no ubuntu 22.04, será necessário das seguintes tecnologia
 - Docker Compose
 - Java => Openjdk-8-jdk
 - Suba os containers da aplicação com o comando, todas as configurações já foram feitas para rodar perfeitamente. Informei as configurações de ambiente do que eu fiz
+- será necessário criar um **diretório prometheus_data** dentro do diretório **prometheus** para que não tenha erro ao subir o container do prometheus
 ```bash
 docker-compose up -d
 ```
