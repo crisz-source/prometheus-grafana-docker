@@ -1,0 +1,17 @@
+{
+	"ulid": "01JCZM655FX5QDCM0WKR889HQG",
+	"minTime": 1731882551099,
+	"maxTime": 1731888000000,
+	"stats": {
+		"numSamples": 102791,
+		"numSeries": 682,
+		"numChunks": 901
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01JCZM655FX5QDCM0WKR889HQG"
+		]
+	},
+	"version": 1
+}
